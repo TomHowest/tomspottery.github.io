@@ -1,0 +1,335 @@
+main {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "bovenbalk" "menu" "inhoud" " onderbalk";
+}
+
+header {
+    background-color: gray;
+    grid-area: bovenbalk;
+    border: 10px;
+}
+
+img.logo {
+    width: 100px;
+    height: 100px;
+    margin: 60px;
+
+}
+
+header h1 {
+    text-align: center;
+    color: black;
+}
+
+header h2 {
+    text-align: center;
+    color: black;
+    margin: 10px;
+    font-family: Helvetica, Verdana, sans-serif;
+    font-weight: normal;
+    line-height: 2em;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+nav {
+    grid-area: menu;
+    text-align: center;
+}
+
+
+nav ul li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+}
+
+nav a {
+    font-family: Helvetica, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+
+}
+
+nav a:hover {
+    color: grey;
+}
+
+.active {
+    color:rgb(222, 221, 221);
+}
+
+main {
+    grid-area: inhoud;
+    padding: 5px;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+}
+
+table.vergelijking {
+    border: solid 1px grey;
+    background-color: grey;
+    width: 50%;
+    margin: auto;
+}
+
+table.vergelijking>caption {
+    text-align: left;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+table thead {
+    background-color: white;
+}
+
+table tbody {
+    background-color: white;
+}
+
+fieldset div {
+    max-width: 40rem;
+    margin: auto;
+    text-align: center;
+}
+
+fieldset {
+    border: 5px solid black;
+    padding: 1rem;
+    margin: auto;
+}
+
+fieldset div.contact label {
+    margin-left: 1rem;
+    display: inline-block;
+    width: 7.5rem;
+    text-align: left;
+
+}
+
+fieldset div.contact input {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 0.5rem;
+}
+
+fieldset div.reden label {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 15rem;
+    text-align: left;
+
+}
+
+fieldset div.reden input {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+fieldset div.klant label {
+    margin-left: 1rem;
+    display: inline-block;
+    width: 3rem;
+    text-align: left;
+
+}
+
+fieldset div.klant input {
+    display: inline-block;
+    width: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+    padding: 1rem;
+    width: 200px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 0.25rem/0.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: auto;
+
+}
+
+input[type="submit"]:hover {
+    border: 2px solid grey;
+    color: grey;
+}
+
+input[type="submit"]:active {
+    border: 2px solid white;
+    color: grey;
+}
+
+
+input[type="reset"] {
+    padding: 1rem;
+    width: 200px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 0.25rem/0.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: auto;
+}
+
+input[type="reset"]:hover {
+    border: 2px solid grey;
+    color: grey;
+}
+
+input[type="reset"]:active {
+    border: 2px solid white;
+    color: grey;
+}
+
+textarea {
+    width: 100%;
+}
+
+div.chatButton input {
+    position: fixed;
+    margin: auto;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+    width: 200px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 0.25rem/0.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+div.chatButton input:hover {
+    border: 2px solid grey;
+    color: grey;
+}
+
+div.chatButton input:active {
+    border: 2px solid white;
+    color: grey;
+}
+
+
+.image
+{
+    position: relative;
+    width: 180px;
+    height: 205px;
+}
+
+.image__image{
+    position: relative;
+    max-width: 100%;
+}
+
+.imageButton
+{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color:darkgray;
+
+}
+
+.image__overlay1
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+
+.image__overlay1:hover
+{
+    opacity: 1;
+}
+
+.imageButton:hover
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+#flex-container
+{
+    padding: 10px;
+    border: 3px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: auto;
+}
+
+#first
+{
+    padding: 20 px;
+    margin: 20px;
+}
+
+footer {
+    grid-area: onderbalk;
+    text-align: center;
+}
+
+@media (max-width: 960px) {
+    nav ul li {
+        display: block;
+        margin: auto;
+    }
+
+    div.chatButton input {
+        position: fixed;
+        margin: 10px 10px 10px 10px;
+        right: 1rem;
+        bottom: 1rem;
+        padding: 1rem;
+        width: auto;
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 0.25rem/0.2rem;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}

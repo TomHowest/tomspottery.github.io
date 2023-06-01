@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/mainstyle.css">
+    <title>Tom's pottery</title>
+    <link rel="shortcut icon" href="/images/Logo/Logo website.png" </head>
+</head>
+
+<body>
+
+    <header>
+        <h1><img src="/images/Logo/Logo website.png" alt="Logowebsite" class="logo"></h1>
+        <h1>Tom's pottery</h1>
+        <h2>Welkom bij het oracel</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Homepage</a></li>
+            <li><a href="/webshop.html">shop</a></li>
+            <li><a href="/webshopTassen.html">shop tassen</a></li>
+            <li><a href="/webshopKommen.html">shop komen</a></li>
+            <li><a href="/webshopVazen.html">shop vazen</a></li>
+            <li><a href="/WebshopOngeglazuurd.html">shop bisque</a></li>
+            <li><a class="active" href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" id="contactform" name="contactform">
+            <fieldset>
+                <h3>Contactformulier</h3>
+                <h3>Contact informatie</h3>
+                <div class="contact">
+                    <div>
+                        <label for="txtFirstName">*Voornaam</label>
+                        <input type="text" name="FirstName" id="txtFirstName" required />
+                    </div>
+                    <div>
+                        <label for="txtLastName">*Familie naam</label>
+                        <input type="text" name="LastName" id="txtLastName" required />
+                    </div>
+                    <div>
+                        <label for="txtStreet">*Straatnaam</label>
+                        <input type="text" name="Street" id="txtStreet" required />
+                    </div>
+                    <div>
+                        <label for="txtAdressNumber">*Busummer</label>
+                        <input type="number" name="AdressNumber" id="txtAdressNumber" required />
+                    </div>
+                    <div>
+                        <label for="txtPostalCode">*PostalCode</label>
+                        <input type="number" name="PostalCode" id="txtPostalCode" required />
+                    </div>
+                    <div>
+                        <label for="txtMail">*E-mailadres</label>
+                        <input type="email" name="Mail" id="txtMail" required />
+                    </div>
+                    <div>
+                        <label for="txtTel">*Telefoonnummer</label>
+                        <input type="tel" name="Tel" id="Tel" required />
+                    </div>
+                </div>
+                <h3>Reden voor contact</h3>
+                <div class="reden">
+                    <div>
+                        <label for="chkProblemProduct">Probleem met een product</label>
+                        <input type="checkbox" name="ProblemProduct" id="chkProblemProduct" />
+                    </div>
+                    <div>
+                        <label for="chkQuestionProduct">Vragen over producten</label>
+                        <input type="checkbox" name="QuestionProduct" id="chkQuestionProduct" />
+                    </div>
+                    <div>
+                        <label for="chkReturnPolicy">Vragen over garantie en retournering</label>
+                        <input type="checkbox" name="ReturnPolicy" id="chkReturnPolicy" />
+                    </div>
+                    <div>
+                        <label for="chkCommision">Vragen over potten op vraag of maat gemaakt en op bestlling</label>
+                        <input type="checkbox" name="Commision" id="chkReturnPolicy" />
+                    </div>
+                    <div>
+                        <label for="chkLearningHowToThrow">Vragen over cursussen om te potten te leren gooien op een
+                            wiel</label>
+                        <input type="checkbox" name="LearningHowToThrow" id="chkLearningHowToThrow" />
+                    </div>
+                </div>
+                <h3>Bent u reeds klant of niet?</h3>
+                <div class="klant">
+                    <div>
+                        <input id="rdb" name="Ja" type="radio" value="Ja" />
+                        <label for="rdbJa">Ja</label>
+                    </div>
+                    <div>
+                        <input id="rdb" name="Nee" type="radio" value="Nee" />
+                        <label for="rdbNee">Nee</label>
+                    </div>
+                </div>
+                <h3>Bericht</h3>
+                <div class="message">
+                    <div>
+                        <textarea name="tekst" rows="25" placeholder="Typ hier uw bericht" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Verstuur bericht" />
+                        <input type="reset" value="Reset" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <form />
+
+            <div class="chatButton">
+                <input type="button" value="Chatknop" />
+            </div>
+
+    </main>
+
+    <footer>
+        <small>Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en
+            hebben louter educatieve doeleinden</small>
+        <p>© Tom Beirnaert &#8212 WFB@Home &#8212 Howest</p>
+    </footer>
+</body>
+
+</html>
